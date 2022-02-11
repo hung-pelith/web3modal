@@ -125,7 +125,7 @@ export class ProviderController {
 
     const displayInjected =
       !!this.injectedProvider && !this.disableInjectedProvider;
-    const onlyInjected = displayInjected && mobile;
+    const onlyInjected = false;
 
     const providerList = [];
 
