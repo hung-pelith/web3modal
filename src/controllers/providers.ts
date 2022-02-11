@@ -6,7 +6,6 @@ import {
   CACHED_PROVIDER_KEY
 } from "../constants";
 import {
-  isMobile,
   IProviderControllerOptions,
   IProviderOptions,
   IProviderDisplayWithConnector,
@@ -119,8 +118,6 @@ export class ProviderController {
   }
 
   public getUserOptions = () => {
-    const mobile = isMobile();
-
     const defaultProviderList = this.providers.map(({ id }) => id);
 
     const displayInjected =
